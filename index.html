@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>411 BURGUER — Hamburgueria Artesanal & Restaurante | Vila Mariana, SP</title>
+  <meta name="description" content="411 Burguer: Hamburgueria artesanal e restaurante na Rua Botucatu, 411, Vila Mariana. Blends de 140g grelhados, maionese verde da casa, almoço executivo e delivery. Nota 4.8 no Google.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;0,6..96,900;1,6..96,700&family=Oswald:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@800;900&display=swap" rel="stylesheet">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23781838'/><text x='50%' y='62%' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='42' fill='%23BCE74C'>411</text></svg>">
+  <link rel="canonical" href="https://411-burguer.vercel.app/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://411-burguer.vercel.app/">
+  <meta property="og:title" content="411 BURGUER — Hamburgueria Artesanal & Restaurante | Vila Mariana, SP">
+  <meta property="og:description" content="Hamburgueria artesanal e restaurante na Rua Botucatu, 411, Vila Mariana. Blends de 140g grelhados na brasa, maionese verde da casa, almoço executivo e delivery. Nota 4.8★ no Google.">
+  <meta property="og:image" content="https://411-burguer.vercel.app/imagens/imgi_15_625030830_18095021401948013_2280612289615818262_n.jpg">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="411 BURGUER — Hamburgueria Artesanal & Restaurante | Vila Mariana">
+  <meta name="twitter:description" content="Hamburgueria artesanal e restaurante na Rua Botucatu, 411, Vila Mariana. Blends de 140g grelhados, almoço executivo e sobremesas.">
+  <meta name="twitter:image" content="https://411-burguer.vercel.app/imagens/imgi_15_625030830_18095021401948013_2280612289615818262_n.jpg">
+
+  <!-- Schema.org LocalBusiness JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FastFoodRestaurant",
+    "name": "411 Burguer",
+    "image": "https://411-burguer.vercel.app/imagens/imgi_15_625030830_18095021401948013_2280612289615818262_n.jpg",
+    "telephone": "+5511988669949",
+    "priceRange": "$$",
+    "servesCuisine": ["Hamburgueria Artesanal", "Almoço Executivo", "Sobremesas"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Botucatu, 411",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "04023-061",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.5939,
+      "longitude": -46.6432
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "11:00",
+        "closes": "16:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "11:30",
+        "closes": "16:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "18:00",
+        "closes": "22:40"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "89"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       SCENE 0: FLOATING HEADER PILL NAVIGATION (411 BURGUER)
+       ============================================================ -->
+  <header class="header-pill-wrapper" id="main-header">
+    <nav class="header-pill" aria-label="Navegação Principal">
+      
+      <!-- Left Navigation Links -->
+      <div class="nav-links-left">
+        <a href="#cardapio" class="nav-link nav-has-dropdown">
+          <span>Cardápio</span>
+          <svg class="dropdown-chevron" viewBox="0 0 12 12" fill="none">
+            <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <a href="#especialidades" class="nav-link">Especialidades</a>
+        <a href="#historia" class="nav-link">Nossa Casa</a>
+        <a href="#novidades" class="nav-link">Novidades</a>
+        <a href="#cardapio" class="nav-link nav-search-link" aria-label="Buscar no Cardápio">
+          <span>Buscar</span>
+          <span class="search-icon-pill">⌕</span>
+        </a>
+      </div>
+
+      <!-- Center Official Brandmark (411 Wordmark) -->
+      <a href="#" class="brand-wordmark-link" aria-label="411 Burguer Home">
+        <div class="brand-wordmark">
+          <span class="wordmark-number">411</span>
+          <span class="wordmark-text">BURGUER</span>
+          <span class="wordmark-sub">ARTESANAL</span>
+        </div>
+      </a>
+
+      <!-- Right Conversion CTAs (Dual Pills) -->
+      <div class="nav-actions-right">
+        <a href="https://api.whatsapp.com/send?phone=5511988669949&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20pedido%20no%20411%20Burguer!" target="_blank" rel="noopener" class="btn-pill btn-pill-white">
+          <span class="btn-text-full">Pedir Online</span>
+          <span class="btn-text-mobile">Pedir</span>
+          <span class="btn-arrow-circle dark-arrow">
+            <svg viewBox="0 0 16 16" fill="currentColor">
+              <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
+            </svg>
+          </span>
+        </a>
+        
+        <a href="#cardapio" class="btn-pill btn-pill-outline hide-mobile">
+          <span>Ver Cardápio</span>
+          <span class="btn-arrow-circle light-arrow">
+            <svg viewBox="0 0 16 16" fill="currentColor">
+              <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Abrir Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- Mobile Slide-out Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-content">
+      <a href="#cardapio" class="mobile-nav-link">Cardápio</a>
+      <a href="#atributos" class="mobile-nav-link">Nossos Pilares</a>
+      <a href="#historia" class="mobile-nav-link">Nossa Casa</a>
+      <a href="#especialidades" class="mobile-nav-link">Especialidades</a>
+      <a href="#novidades" class="mobile-nav-link">Novidades 411</a>
+      <a href="#social" class="mobile-nav-link">Comunidade</a>
+      <div class="mobile-drawer-footer">
+        <a href="https://api.whatsapp.com/send?phone=5511988669949" target="_blank" rel="noopener" class="btn-pill btn-pill-white btn-full">
+          <span>Fazer Pedido no WhatsApp</span>
+          <span class="btn-arrow-circle dark-arrow">›</span>
+        </a>
+        <p class="drawer-address">Rua Botucatu, 411 • Vila Mariana, SP</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============================================================
+         SCENE 1: REFERENCE HERO SHOWCASE (APPROVED FIDELITY)
+         ============================================================ -->
+    <section class="hero-section" id="hero">
+      
+      <!-- Background Solid Burgundy Petal Mandala -->
+      <div class="hero-petal-backdrop" aria-hidden="true">
+        <svg class="petal-mandala-svg" viewBox="0 0 1000 1000" fill="none">
+          <g fill="#500E23">
+            <circle cx="500" cy="500" r="210" />
+            <ellipse cx="500" cy="220" rx="150" ry="220" />
+            <ellipse cx="500" cy="780" rx="150" ry="220" />
+            <ellipse cx="220" cy="500" rx="220" ry="150" />
+            <ellipse cx="780" cy="500" rx="220" ry="150" />
+            <ellipse cx="300" cy="300" rx="190" ry="130" transform="rotate(-45 300 300)" />
+            <ellipse cx="700" cy="700" rx="190" ry="130" transform="rotate(-45 700 700)" />
+            <ellipse cx="700" cy="300" rx="190" ry="130" transform="rotate(45 700 300)" />
+            <ellipse cx="300" cy="700" rx="190" ry="130" transform="rotate(45 300 700)" />
+          </g>
+        </svg>
+      </div>
+
+      <!-- Monumental Typography Stage -->
+      <div class="hero-typography-stage">
+        <div class="adjacent-title adjacent-left" aria-hidden="true">
+          <span>BATATA</span>
+          <span>FRITA</span>
+        </div>
+
+        <h1 class="hero-headline" id="hero-headline">
+          <span class="hero-headline-line1">SUPER BURGUER</span>
+          <span class="hero-headline-line2">& BACON ARTESANAL</span>
+        </h1>
+
+        <div class="adjacent-title adjacent-right" aria-hidden="true">
+          <span>SMASH</span>
+          <span>CRISPY</span>
+        </div>
+      </div>
+
+      <!-- Center 3D Product Stage with Overlap & Adjacent Peeks -->
+      <div class="hero-product-stage">
+        
+        <div class="adjacent-product-peek peek-left" aria-hidden="true">
+          <img src="assets/hero-fries-cutout.png" alt="Porção de Batata Frita Crocante" class="adjacent-img">
+        </div>
+
+        <div class="hero-centerpiece-wrapper">
+          <div class="floating-sticker-badge">
+            <svg class="sticker-svg" viewBox="0 0 140 140">
+              <circle cx="70" cy="70" r="68" fill="#BCE74C"/>
+              <path id="sticker-path" d="M 18 70 A 52 52 0 1 1 122 70 A 52 52 0 1 1 18 70" fill="none"/>
+              <text class="sticker-text">
+                <textPath href="#sticker-path" startOffset="0%">
+                  RECEITA DA CASA • 100% ARTESANAL • 411 BURGUER •
+                </textPath>
+              </text>
+              <circle cx="70" cy="70" r="28" fill="#14360B"/>
+              <text x="70" y="74" class="sticker-center-text" text-anchor="middle">140G</text>
+            </svg>
+          </div>
+
+          <span class="sparkle-diamond sparkle-1" aria-hidden="true">✦</span>
+
+          <div class="hero-product-3d-frame">
+            <img 
+              src="assets/hero-burger-cutout.png" 
+              alt="411 Super Burguer Artesanal: Pão Brioche Tostado, Blend 140g Grelhado, Cheddar Derretido, Bacon Crocante, Tomate e Alface Frescos"
+              class="hero-3d-img"
+              id="hero-main-img"
+            >
+          </div>
+
+          <span class="sparkle-diamond sparkle-2" aria-hidden="true">✦</span>
+          <span class="sparkle-diamond sparkle-3" aria-hidden="true">✦</span>
+        </div>
+
+        <div class="adjacent-product-peek peek-right" aria-hidden="true">
+          <img src="assets/hero-smash-cutout.png" alt="Double Smash Burger com Crosta de Queijo" class="adjacent-img">
+        </div>
+
+      </div>
+
+      <!-- Hero Bottom Action Buttons & Slide Controller -->
+      <div class="hero-bottom-controls">
+        <div class="hero-action-buttons">
+          <a href="https://api.whatsapp.com/send?phone=5511988669949&text=Ol%C3%A1,%20gostaria%20de%20fazer%20o%20pedido%20do%20Super%20Burguer%20no%20411!" target="_blank" rel="noopener" class="btn-pill btn-pill-hero-white">
+            <span>Fazer Pedido no WhatsApp</span>
+            <span class="btn-arrow-circle dark-arrow">
+              <svg viewBox="0 0 16 16" fill="currentColor">
+                <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
+              </svg>
+            </span>
+          </a>
+          
+          <a href="#cardapio" class="btn-pill btn-pill-hero-plum">
+            <span>Ver Cardápio Completo</span>
+            <span class="btn-arrow-circle light-arrow">
+              <svg viewBox="0 0 16 16" fill="currentColor">
+                <path fill-rule="evenodd" d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <div class="hero-pagination-dots" aria-label="Controle de Slides">
+          <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+          <button class="dot" data-index="1" aria-label="Slide 2"></button>
+          <button class="dot" data-index="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============================================================
+         MARQUEE 1: KINETIC LAVENDER MARQUEE (411 BURGUER)
+         ============================================================ -->
+    <div class="marquee-ribbon" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>●</span>
+          <span>HAMBURGUERIA ARTESANAL</span>
+          <span>●</span>
+          <span>BLEND DE 140G NA GRELHA</span>
+          <span>●</span>
+          <span>MAIONESE VERDE DA CASA</span>
+          <span>●</span>
+          <span>DO ALMOÇO À NOITE</span>
+          <span>●</span>
+          <span>RUA BOTUCATU, 411</span>
+          <span>●</span>
+          <span>NOTA 4.8 NO GOOGLE</span>
+          <span>●</span>
+          <span>VILA MARIANA & VILA CLEMENTINO</span>
+          <span>●</span>
+          <span>PEDIDOS WHATSAPP (11) 98866-9949</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span>●</span>
+          <span>HAMBURGUERIA ARTESANAL</span>
+          <span>●</span>
+          <span>BLEND DE 140G NA GRELHA</span>
+          <span>●</span>
+          <span>MAIONESE VERDE DA CASA</span>
+          <span>●</span>
+          <span>DO ALMOÇO À NOITE</span>
+          <span>●</span>
+          <span>RUA BOTUCATU, 411</span>
+          <span>●</span>
+          <span>NOTA 4.8 NO GOOGLE</span>
+          <span>●</span>
+          <span>VILA MARIANA & VILA CLEMENTINO</span>
+          <span>●</span>
+          <span>PEDIDOS WHATSAPP (11) 98866-9949</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SCENE 2: PRODUCT SPECTRUM (WARM CREAM ROOM)
+         ============================================================ -->
+    <section class="spectrum-section" id="cardapio">
+      <div class="spectrum-container reveal-init">
+        
+        <!-- Category Filter Chips (Pill Filter) -->
+        <div class="category-filter-chips">
+          <button class="filter-chip active" data-cat="all">
+            <span class="chip-dot">✦</span>
+            <span>Mais Pedidos</span>
+          </button>
+          <button class="filter-chip" data-cat="burgers">
+            <span class="chip-dot dot-orange">✦</span>
+            <span>Burgers Artesanais</span>
+          </button>
+          <button class="filter-chip" data-cat="combos">
+            <span class="chip-dot dot-red">✦</span>
+            <span>Combos & Fritas</span>
+          </button>
+          <button class="filter-chip" data-cat="almoco">
+            <span class="chip-dot dot-green">✦</span>
+            <span>Almoço & Massas</span>
+          </button>
+          <button class="filter-chip" data-cat="sobremesas">
+            <span class="chip-dot dot-purple">✦</span>
+            <span>Sobremesas</span>
+          </button>
+        </div>
+
+        <!-- 5-Card Product Track (Isolated Food Items) -->
+        <div class="spectrum-slider-wrapper">
+          <div class="spectrum-slider-track reveal-stagger" id="spectrum-track">
+            
+            <!-- Item 1 (Left Peek) -->
+            <div class="product-spec-item" data-cat="sobremesas">
+              <div class="product-item-img-box">
+                <img src="imagens/imgi_9_484988117_661938226298339_7879331650175288342_n.jpg" alt="Taça Especial 411" class="product-item-img">
+              </div>
+              <h3 class="product-item-title">TAÇA DA CASA</h3>
+              <div class="product-item-badges">
+                <span class="food-check">✔ Artesanal</span>
+                <span class="food-check">✔ Sobremesa</span>
+              </div>
+            </div>
+
+            <!-- Item 2 (Left Mid) -->
+            <div class="product-spec-item" data-cat="burgers">
+              <div class="product-item-img-box">
+                <img src="imagens/imgi_15_625030830_18095021401948013_2280612289615818262_n.jpg" alt="Super 411 Bacon" class="product-item-img">
+              </div>
+              <h3 class="product-item-title">SUPER 411 BACON</h3>
+              <div class="product-item-badges">
+                <span class="food-check">✔ Blend 140g</span>
+                <span class="food-check">✔ Cheddar</span>
+                <span class="food-check">✔ Brioche</span>
+              </div>
+            </div>
+
+            <!-- Item 3 (Center Featured Hero) -->
+            <div class="product-spec-item active-center-item" data-cat="combos">
+              <div class="product-item-img-box">
+                <img src="imagens/imgi_41_639503028_18535667044071745_17989100828971617_n.jpg" alt="Combo Master 411" class="product-item-img">
+              </div>
+              <h3 class="product-item-title">COMBO MASTER 411</h3>
+              <div class="product-item-badges">
+                <span class="food-check">✔ Burger 140g</span>
+                <span class="food-check">✔ Batata Frita</span>
+                <span class="food-check">✔ Maionese Verde</span>
+              </div>
+            </div>
+
+            <!-- Item 4 (Right Mid) -->
+            <div class="product-spec-item" data-cat="burgers">
+              <div class="product-item-img-box">
+                <img src="imagens/imgi_49_625117457_18105169048755435_8053998486661344997_n.jpg" alt="Smash Crispy Duplo" class="product-item-img">
+              </div>
+              <h3 class="product-item-title">SMASH CRISPY</h3>
+              <div class="product-item-badges">
+                <span class="food-check">✔ 2x Smash 80g</span>
+                <span class="food-check">✔ Crosta de Queijo</span>
+              </div>
+            </div>
+
+            <!-- Item 5 (Right Peek) -->
+            <div class="product-spec-item" data-cat="almoco">
+              <div class="product-item-img-box">
+                <img src="imagens/imgi_10_468104949_1028829678998987_4527422835939909442_n.jpg" alt="Fettuccine Almoço Executivo" class="product-item-img">
+              </div>
+              <h3 class="product-item-title">FETTUCCINE</h3>
+              <div class="product-item-badges">
+                <span class="food-check">✔ Almoço 11h-16h</span>
+                <span class="food-check">✔ Massa Fresca</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Floating Slider Controller Pill -->
+        <div class="slider-control-pill">
+          <button class="slider-arrow-btn" id="slider-prev" aria-label="Anterior">‹</button>
+          <div class="slider-dots" id="slider-dots">
+            <span class="s-dot"></span>
+            <span class="s-dot"></span>
+            <span class="s-dot active"></span>
+            <span class="s-dot"></span>
+            <span class="s-dot"></span>
+          </div>
+          <button class="slider-arrow-btn" id="slider-next" aria-label="Próximo">›</button>
+          <a href="https://api.whatsapp.com/send?phone=5511988669949" target="_blank" rel="noopener" class="slider-view-all">
+            <span>Ver Cardápio Completo</span>
+            <span class="btn-arrow-circle dark-arrow">›</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SCENE 3: KINETIC ATTRIBUTE TYPOGRAPHY LIST (411 BRAND)
+         ============================================================ -->
+    <section class="attributes-section" id="atributos">
+      <div class="attributes-container">
+        
+        <!-- Floating Sticker Badges in Margins -->
+        <div class="attr-floating-badge badge-left">
+          <img src="assets/hero-burger-cutout.png" alt="Burger Artesanal" class="badge-cutout-img">
+          <span class="badge-tag-label">140G BLEND</span>
+        </div>
+
+        <div class="attr-floating-badge badge-right">
+          <div class="sunburst-sticker">
+            <span>4.8 ★</span>
+            <small>GOOGLE</small>
+          </div>
+        </div>
+
+        <!-- Stacked Monumental Words -->
+        <div class="stacked-typography-block reveal-stagger">
+          <div class="stacked-word word-orange">100% ARTESANAL</div>
+          <div class="stacked-word">BLEND 140G NA GRELHA</div>
+          <div class="stacked-word">PÃO BRIOCHE TOSTADO</div>
+          <div class="stacked-word">MAIONESE VERDE DA CASA</div>
+          <div class="stacked-word">CHEDDAR DERRETIDO</div>
+          <div class="stacked-word">NOTA 4.8 NO GOOGLE</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SCENE 4: LAYERED BRAND STORY (SPLIT HEADLINE)
+         ============================================================ -->
+    <section class="story-layered-section" id="historia">
+      <div class="story-container reveal-init">
+        
+        <!-- Top Monumental Split Headline (Left Aligned) -->
+        <h2 class="story-headline-top">TRADIÇÃO DE BAIRRO,</h2>
+
+        <!-- Center-Right Editorial Layout with Photo Overlap -->
+        <div class="story-content-wrap">
+          
+          <!-- Left: Large Rounded Photo with Orbiting Seals -->
+          <div class="story-media-box">
+            <img src="imagens/imgi_25_621434025_17973658895828881_8207167361810702906_n.jpg" alt="Interior Aconchegante do 411 Burguer na Vila Mariana" class="story-main-photo" loading="lazy">
+            
+            <!-- Top Right Circular Seal -->
+            <div class="story-seal-top-right">
+              <span>BOTUCATU</span>
+              <strong>411</strong>
+              <small>SP</small>
+            </div>
+
+            <!-- Bottom Left Orange Starburst Seal -->
+            <div class="story-seal-bottom-left">
+              <span>RECEITA DE FAMÍLIA ✦</span>
+            </div>
+          </div>
+
+          <!-- Right: Editorial Narrative Column -->
+          <div class="story-editorial-side">
+            <p class="story-mission-text">
+              Nossa missão é compartilhar o amor pela comida de verdade com cada cliente da Vila Mariana. Do almoço executivo reconfortante servido diariamente à grelha ardente de hambúrgueres artesanais à noite, você nunca encontrará nada artificial em nossas mesas.
+            </p>
+            <a href="https://maps.google.com/?q=Rua+Botucatu+411+Vila+Mariana+Sao+Paulo" target="_blank" rel="noopener" class="btn-pill btn-pill-story">
+              <span>Conhecer Nossa Casa</span>
+              <span class="btn-arrow-circle dark-arrow">›</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Bottom Monumental Split Headline (Spanning Across) -->
+        <div class="story-headline-bottom">CRIANDO COMUNIDADE</div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SCENE 5: CULINARY SHOWCASE / RECIPE CAROUSEL (PASTELS)
+         ============================================================ -->
+    <section class="culinary-cards-section" id="especialidades">
+      <div class="culinary-container reveal-init">
+        
+        <div class="section-heading-center">
+          <p class="section-eyebrow">DO NOSSO FOGO PARA SUA MESA</p>
+          <h2 class="section-title-display">MOMENTOS GASTRONÔMICOS</h2>
+          <a href="https://api.whatsapp.com/send?phone=5511988669949" target="_blank" rel="noopener" class="btn-pill btn-pill-outline-dark" style="margin-top: 14px;">
+            <span>Ver Cardápio Completo</span>
+            <span class="btn-arrow-circle dark-arrow">›</span>
+          </a>
+        </div>
+
+        <!-- 4-Up Saturated Color-Blocked Cards Track -->
+        <div class="culinary-track reveal-stagger">
+          
+          <!-- Card 1: Yellow Card -->
+          <div class="culinary-recipe-card card-yellow">
+            <div class="card-photo-holder">
+              <span class="time-prep-pill">15 min</span>
+              <img src="imagens/imgi_31_620506755_17976907163970678_7943269193404425715_n.jpg" alt="Burger Rústico na Tábua" class="c-card-img" loading="lazy">
+            </div>
+            <div class="card-meta-tag">✔ Artesanal 140g</div>
+            <h3 class="c-card-title">BURGER RÚSTICO NA TÁBUA</h3>
+            <a href="https://api.whatsapp.com/send?phone=5511988669949&text=Ol%C3%A1,%20gostaria%20de%20pedir%20o%20Burger%20R%C3%BAstico!" target="_blank" rel="noopener" class="btn-pill btn-pill-card-white">
+              <span>Fazer Pedido</span>
+              <span class="btn-arrow-circle dark-arrow">›</span>
+            </a>
+          </div>
+
+          <!-- Card 2: Cyan Card -->
+          <div class="culinary-recipe-card card-cyan">
+            <div class="card-photo-holder">
+              <span class="time-prep-pill">12 min</span>
+              <img src="imagens/imgi_10_468104949_1028829678998987_4527422835939909442_n.jpg" alt="Fettuccine com Almôndegas" class="c-card-img" loading="lazy">
+            </div>
+            <div class="card-meta-tag">✔ Almoço Executivo</div>
+            <h3 class="c-card-title">FETTUCCINE COM ALMÔNDEGAS</h3>
+            <a href="https://api.whatsapp.com/send?phone=5511988669949&text=Ol%C3%A1,%20quero%20o%20Fettuccine%20do%20Almo%C3%A7o!" target="_blank" rel="noopener" class="btn-pill btn-pill-card-white">
+              <span>Fazer Pedido</span>
+              <span class="btn-arrow-circle dark-arrow">›</span>
+            </a>
+          </div>
+
+          <!-- Card 3: Lavender Card -->
+          <div class="culinary-recipe-card card-lavender">
+            <div class="card-photo-holder">
+              <span class="time-prep-pill">10 min</span>
+              <img src="imagens/imgi_71_619934795_18077546810582376_8636527571439981763_n.jpg" alt="Batatas Rústicas com Maionese Verde" class="c-card-img" loading="lazy">
+            </div>
+            <div class="card-meta-tag">✔ Porção da Casa</div>
+            <h3 class="c-card-title">BATATAS RÚSTICAS & MAIONESE</h3>
+            <a href="https://api.whatsapp.com/send?phone=5511988669949&text=Ol%C3%A1,%20quero%20as%20Batatas%20R%C3%BAsticas!" target="_blank" rel="noopener" class="btn-pill btn-pill-card-white">
+              <span>Fazer Pedido</span>
+              <span class="btn-arrow-circle dark-arrow">›</span>
+            </a>
+          </div>
+
+          <!-- Card 4: Blue Card -->
+          <div class="culinary-recipe-card card-blue">
+            <div class="card-photo-holder">
+              <span class="time-prep-pill">15 min</span>
+              <img src="imagens/imgi_49_625117457_18105169048755435_8053998486661344997_n.jpg" alt="Double Smash Cheese Crispy" class="c-card-img" loading="lazy">
+            </div>
+            <div class="card-meta-tag">✔ Queijo Crocante</div>
+            <h3 class="c-card-title">DOUBLE SMASH CHEESE CRISPY</h3>
+            <a href="https://api.whatsapp.com/send?phone=5511988669949&text=Ol%C3%A1,%20quero%20o%20Double%20Smash!" target="_blank" rel="noopener" class="btn-pill btn-pill-card-white">
+              <span>Fazer Pedido</span>
+              <span class="btn-arrow-circle dark-arrow">›</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SCENE 6: HORIZONTAL FOLDER ACCORDION (SERVICES TABS)
+         ============================================================ -->
+    <section class="folder-accordion-section" id="novidades">
+      <div class="accordion-container reveal-init">
+        
+        <div class="section-heading-center">
+          <p class="section-eyebrow">NOVIDADES & TURNOS</p>
+          <h2 class="section-title-display">O MUNDO DO 411 BURGUER</h2>
+          <a href="#cardapio" class="btn-pill btn-pill-outline-dark" style="margin-top: 12px;">
+            <span>Conhecer Todos os Serviços</span>
+            <span class="btn-arrow-circle dark-arrow">›</span>
+          </a>
+        </div>
+
+        <div class="services-horizontal-accordion" id="folder-accordion">
+          
+          <!-- Panel 1: Yellow Active Tab -->
+          <div class="services-accordion-panel panel-yellow active" data-panel="0">
+            <div class="tab-vertical-spine">
+              <span class="spine-text">BURGERS DA NOITE</span>
+            </div>
+            <div class="tab-expanded-content">
+              <div class="tab-photo-wrap">
+                <img src="imagens/imgi_49_625117457_18105169048755435_8053998486661344997_n.jpg" alt="Burgers da Noite" class="tab-img">
+              </div>
+              <div class="tab-text-wrap">
+                <span class="tab-schedule-badge">TERÇA A DOMINGO • 18:00 ÀS 22:40</span>
+                <h3 class="tab-heading">A NOITE DO BURGER NA GRELHA DE VERDADE</h3>
+                <p class="tab-desc">
+                  Blends de 140g moldados na casa, queijo derretido, smash burgers crocantes e porções de batatas com maionese verde artesanal servidos no deck e no delivery.
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=5511988669949" target="_blank" rel="noopener" class="btn-pill btn-pill-tab-dark">
+                  <span>Pedir no WhatsApp</span>
+                  <span class="btn-arrow-circle light-arrow">›</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 2: Cyan Tab -->
+          <div class="services-accordion-panel panel-cyan" data-panel="1">
+            <div class="tab-vertical-spine">
+              <span class="spine-text">ALMOÇO EXECUTIVO</span>
+            </div>
+            <div class="tab-expanded-content">
+              <div class="tab-photo-wrap">
+                <img src="imagens/imgi_10_468104949_1028829678998987_4527422835939909442_n.jpg" alt="Almoço Executivo 411" class="tab-img">
+              </div>
+              <div class="tab-text-wrap">
+                <span class="tab-schedule-badge">SEG A SEX: 11:00 ÀS 16:00 • SÁB E DOM: 11:30 ÀS 16:30</span>
+                <h3 class="tab-heading">PRATOS FEITOS COM AMOR DE CASA</h3>
+                <p class="tab-desc">
+                  Almoço executivo completo na Vila Mariana com massas artesanais, almôndegas ao molho especial, grelhados frescos e sobremesas deliciosas.
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=5511988669949&text=Ol%C3%A1,%20gostaria%20de%20consultar%20o%20menu%20do%20Almo%C3%A7o%20Executivo!" target="_blank" rel="noopener" class="btn-pill btn-pill-tab-dark">
+                  <span>Consultar Menu do Dia</span>
+                  <span class="btn-arrow-circle light-arrow">›</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 3: Lavender Tab -->
+          <div class="services-accordion-panel panel-lavender" data-panel="2">
+            <div class="tab-vertical-spine">
+              <span class="spine-text">DELIVERY RÁPIDO</span>
+            </div>
+            <div class="tab-expanded-content">
+              <div class="tab-photo-wrap">
+                <img src="imagens/imgi_41_639503028_18535667044071745_17989100828971617_n.jpg" alt="Delivery 411 Burguer" class="tab-img">
+              </div>
+              <div class="tab-text-wrap">
+                <span class="tab-schedule-badge">ENTREGA RÁPIDA NA VILA MARIANA & REGIÃO</span>
+                <h3 class="tab-heading">BURGER QUENTINHO NA SUA PORTA</h3>
+                <p class="tab-desc">
+                  Embalagens térmicas especiais garantem que o pão brioche chegue tostado, a carne suculenta e a batata frita super crocante na sua casa.
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=5511988669949&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20pedido%20para%20Delivery!" target="_blank" rel="noopener" class="btn-pill btn-pill-tab-dark">
+                  <span>Pedir Delivery</span>
+                  <span class="btn-arrow-circle light-arrow">›</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MARQUEE 2: SECONDARY CATEGORY TAG RIBBON (411 IDENTITY)
+         ============================================================ -->
+    <div class="marquee-ribbon marquee-tags" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>●</span>
+          <span>BLEND 140G</span>
+          <span>✦</span>
+          <span>PÃO BRIOCHE</span>
+          <span>●</span>
+          <span>MAIONESE VERDE</span>
+          <span>✦</span>
+          <span>SMASH BURGER</span>
+          <span>●</span>
+          <span>ALMOÇO EXECUTIVO</span>
+          <span>✦</span>
+          <span>BATATA RÚSTICA</span>
+          <span>●</span>
+          <span>RUA BOTUCATU 411</span>
+          <span>✦</span>
+          <span>WHATSAPP (11) 98866-9949</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span>●</span>
+          <span>BLEND 140G</span>
+          <span>✦</span>
+          <span>PÃO BRIOCHE</span>
+          <span>●</span>
+          <span>MAIONESE VERDE</span>
+          <span>✦</span>
+          <span>SMASH BURGER</span>
+          <span>●</span>
+          <span>ALMOÇO EXECUTIVO</span>
+          <span>✦</span>
+          <span>BATATA RÚSTICA</span>
+          <span>●</span>
+          <span>RUA BOTUCATU 411</span>
+          <span>✦</span>
+          <span>WHATSAPP (11) 98866-9949</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SCENE 7: RADIANT SOCIAL COMMUNITY HUB (SATURATED ORANGE)
+         ============================================================ -->
+    <section class="social-hub-section" id="social">
+      <div class="social-container reveal-init">
+        
+        <div class="social-header-block">
+          <span class="social-pill-badge">FIQUE CONECTADO</span>
+          <h2 class="social-headline">SIGA @411BURGUER NO INSTAGRAM</h2>
+          
+          <div class="social-actions-row">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="btn-pill btn-pill-social">
+              <span>Instagram</span>
+              <span class="btn-arrow-circle dark-arrow">›</span>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5511988669949" target="_blank" rel="noopener" class="btn-pill btn-pill-social">
+              <span>WhatsApp</span>
+              <span class="btn-arrow-circle dark-arrow">›</span>
+            </a>
+            <a href="https://maps.google.com/?q=Rua+Botucatu+411+Vila+Mariana+Sao+Paulo" target="_blank" rel="noopener" class="btn-pill btn-pill-social">
+              <span>Google Maps</span>
+              <span class="btn-arrow-circle dark-arrow">›</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Horizontal Photo Tile Track with Overlapping Angled Cutout -->
+        <div class="social-gallery-track reveal-stagger">
+          <div class="social-tile">
+            <span class="tile-ig-label">Instagram</span>
+            <img src="imagens/imgi_9_484988117_661938226298339_7879331650175288342_n.jpg" alt="Deck e Calçada" class="tile-img" loading="lazy">
+          </div>
+          <div class="social-tile">
+            <span class="tile-ig-label">Instagram</span>
+            <img src="imagens/imgi_15_625030830_18095021401948013_2280612289615818262_n.jpg" alt="Burger Cheddar Bacon" class="tile-img" loading="lazy">
+          </div>
+          <div class="social-tile tile-with-overlap">
+            <span class="tile-ig-label">Instagram</span>
+            <img src="imagens/imgi_41_639503028_18535667044071745_17989100828971617_n.jpg" alt="Combo 411" class="tile-img" loading="lazy">
+          </div>
+          <div class="social-tile">
+            <span class="tile-ig-label">Instagram</span>
+            <img src="imagens/imgi_25_621434025_17973658895828881_8207167361810702906_n.jpg" alt="Salão de Tijolos" class="tile-img" loading="lazy">
+          </div>
+          <div class="social-tile">
+            <span class="tile-ig-label">Instagram</span>
+            <img src="imagens/imgi_71_619934795_18077546810582376_8636527571439981763_n.jpg" alt="Batata Frita Crocante" class="tile-img" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SCENE 8: FLOATING OVERLAP NEWSLETTER CARD (411 BRAND)
+         ============================================================ -->
+    <div class="newsletter-overlap-wrapper" id="avaliacoes">
+      <div class="newsletter-card reveal-init">
+        
+        <!-- 3 Orbiting Circular Seals -->
+        <div class="orbit-seal seal-sunburst-yellow">
+          <span>DESDE</span>
+          <strong>2020</strong>
+          <small>VILA MARIANA</small>
+        </div>
+
+        <div class="orbit-seal seal-dark-plum">
+          <span>★ 4.8</span>
+          <small>GOOGLE REVIEWS</small>
+        </div>
+
+        <div class="orbit-seal seal-orange-family">
+          <span>100% ARTESANAL</span>
+          <small>RECEITA DA CASA</small>
+        </div>
+
+        <div class="newsletter-content">
+          <h2 class="news-title">RECEBA OS ESPECIAIS DO 411</h2>
+          <p class="news-desc">Receba ofertas especiais, novidades do cardápio e pratos do dia direto no seu WhatsApp!</p>
+          
+          <form class="vip-newsletter-form" id="vip-form" onsubmit="event.preventDefault(); alert('Obrigado! Você receberá nossos benefícios exclusivos no WhatsApp.');">
+            <input type="text" class="news-input" placeholder="Nome Completo*" required>
+            <input type="tel" class="news-input" placeholder="Seu WhatsApp com DDD*" required>
+            <button type="submit" class="btn-pill btn-pill-news-submit">
+              <span>Cadastrar</span>
+              <span class="btn-arrow-circle light-arrow">›</span>
+            </button>
+          </form>
+          <p class="news-disclaimer">✓ Sim, gostaria de receber atualizações e promoções do 411 Burguer via WhatsApp. Cancele quando quiser.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============================================================
+         SCENE 9: MONUMENTAL STATEMENT BRAND FOOTER (411 BRAND)
+         ============================================================ -->
+    <footer class="brand-footer-section" id="contato">
+      <div class="footer-container reveal-init">
+        
+        <!-- Brand Wordmark Top -->
+        <div class="footer-logo-center">
+          <span class="f-num">411</span>
+          <span class="f-text">BURGUER</span>
+        </div>
+
+        <!-- Monumental Slogan Motto -->
+        <div class="footer-motto-block">
+          <p class="footer-motto-text">#BURGUERDEVERDADE</p>
+        </div>
+
+        <!-- 4 Clean Navigation Columns -->
+        <div class="footer-columns-grid">
+          
+          <!-- Column 1: Links Rápidos -->
+          <div class="footer-col">
+            <h3 class="footer-col-header">CARDÁPIO</h3>
+            <ul class="footer-nav-list">
+              <li><a href="#cardapio">Burgers Artesanais 140g</a></li>
+              <li><a href="#cardapio">Double Smash Burgers</a></li>
+              <li><a href="#cardapio">Almoço Executivo</a></li>
+              <li><a href="#cardapio">Batatas Rústicas & Dips</a></li>
+              <li><a href="#atributos">Nossa Maionese Verde</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 2: Sobre & Casa -->
+          <div class="footer-col">
+            <h3 class="footer-col-header">SOBRE O 411</h3>
+            <ul class="footer-nav-list">
+              <li><a href="#historia">Nossa Casa & Deck</a></li>
+              <li><a href="#novidades">Horários de Atendimento</a></li>
+              <li><a href="#social">Galeria do Instagram</a></li>
+              <li><a href="#avaliacoes">Avaliações 4.8★</a></li>
+              <li><a href="#hero">Pedir no WhatsApp</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Horários -->
+          <div class="footer-col">
+            <h3 class="footer-col-header">HORÁRIOS</h3>
+            <div class="footer-schedule-block">
+              <p class="schedule-label"><strong>Almoço Executivo:</strong></p>
+              <p class="schedule-val">Seg a Sex: 11:00 às 16:00</p>
+              <p class="schedule-val">Sáb e Dom: 11:30 às 16:30</p>
+            </div>
+            <div class="footer-schedule-block" style="margin-top: 12px;">
+              <p class="schedule-label"><strong>Burgers & Noite:</strong></p>
+              <p class="schedule-val">Terça a Domingo: 18:00 às 22:40</p>
+            </div>
+          </div>
+
+          <!-- Column 4: Localização & Contato -->
+          <div class="footer-col">
+            <h3 class="footer-col-header">ENDEREÇO & CONTATO</h3>
+            <p class="footer-info-line"><strong>Rua Botucatu, 411</strong></p>
+            <p class="footer-info-line">Vila Mariana, São Paulo - SP</p>
+            <p class="footer-info-line">CEP 04023-061 • Plus Code: C935+X3</p>
+            <p class="footer-info-line" style="margin-top: 10px;">WhatsApp: <strong>(11) 98866-9949</strong></p>
+            <a href="https://maps.google.com/?q=Rua+Botucatu+411+Vila+Mariana+Sao+Paulo" target="_blank" rel="noopener" class="footer-link-action">
+              <span>Abrir no Google Maps ↗</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Baseline Copyright & Ratings -->
+        <div class="footer-baseline-row">
+          <div class="baseline-left">
+            <span>© 2026 411 BURGUER • Hamburgueria Artesanal & Restaurante • Vila Mariana, São Paulo</span>
+          </div>
+          <div class="baseline-right">
+            <span class="baseline-rating">Google Maps: <strong>4.8 ★★★★★</strong> (89 Avaliações)</span>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

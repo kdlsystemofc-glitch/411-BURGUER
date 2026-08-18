@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://411-burguer.vercel.app/sitemap.xml
